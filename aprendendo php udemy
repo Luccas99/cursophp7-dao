@@ -1,0 +1,41 @@
+<?php
+$empty = $post = array();
+foreach ($_POST as $varname => $varvalue) {
+    if (empty($varvalue)) {
+        $empty[$varname] = $varvalue;
+    } else {
+        $post[$varname] = $varvalue;
+    }
+}
+
+print "<pre>";
+if (empty($empty)) {
+    print "Nenhum dos valores enviados com POST estão vazios, enviado:\n";
+    var_dump($post);
+} else {
+    print "Temos " . count($empty) . " valores vazios\n";
+    print "Enviado:\n"; var_dump($post);
+    print "Vazio:\n"; var_dump($empty);
+    exit;
+}
+?><?php
+$empty = $post = array();
+foreach ($_POST as $varname => $varvalue) {
+    if (empty($varvalue)) {
+        $empty[$varname] = $varvalue;
+    } else {
+        $post[$varname] = $varvalue;
+    }
+}
+
+print "<pre>";
+if (empty($empty)) {
+    print "Nenhum dos valores enviados com POST estão vazios, enviado:\n";
+    var_dump($post);
+} else {
+    print "Temos " . count($empty) . " valores vazios\n";
+    print "Enviado:\n"; var_dump($post);
+    print "Vazio:\n"; var_dump($empty);
+    exit;
+}
+?>
