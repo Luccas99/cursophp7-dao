@@ -18,7 +18,9 @@ if (empty($empty)) {
     print "Vazio:\n"; var_dump($empty);
     exit;
 }
-?><?php
+?>
+
+<?php
 $empty = $post = array();
 foreach ($_POST as $varname => $varvalue) {
     if (empty($varvalue)) {
